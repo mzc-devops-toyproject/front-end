@@ -1,6 +1,7 @@
 <script>
   import SvelteRouter from "svelte-router";
   import routes from "./route.js";
+  import Link from "./components/Link.svelte";
 
   function create(node) {
     const router = new SvelteRouter({
@@ -16,7 +17,11 @@
 </style>
 
 <div id="outer-container">
-  <section id="upper-section" />
+  <section id="upper-section">
+    <Link to="/">Main</Link>
+    <Link to="/login">LOGIN</Link>
+    <Link to="/mood-view">MOODS</Link>
+  </section>
   <section id="main-section">
     <div use:create />
   </section>
