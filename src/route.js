@@ -7,5 +7,5 @@ import MoodView from './pages/MoodView.svelte';
 export default [
   { path: '/', component: Main },
   { path: '/login', component: Login },
-  { path: './mood-view', component: MoodView }
+  { path: '/mood-view', component: MoodView }
 ];
