@@ -1,1 +1,3 @@
-<div>Mood Lists</div>
+<div>
+  <h2>어서오세요! 여기에 무드 페이지입니다.</h2>
+</div>

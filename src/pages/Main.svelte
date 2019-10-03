@@ -1,1 +1,3 @@
-<div>This is main page</div>
+<div>
+  <h2>어서오세요! 메인(랜딩) 페이지입니다.</h2>
+</div>
