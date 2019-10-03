@@ -12,7 +12,8 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "sirv-cli": "^0.4.4"
+    "sirv-cli": "^0.4.4",
+    "svelte-router": "^3.0.0-alpha.2"
   },
   "scripts": {
     "build": "rollup -c",
