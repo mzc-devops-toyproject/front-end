@@ -4,6 +4,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
+import autoPreprocess from 'svelte-preprocess';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -24,6 +25,7 @@ export default {
       css: css => {
         css.write('public/bundle.css');
       },
+      preprocess: autoPreprocess(),
     }),
 
     // If you have external dependencies installed from
@@ -40,7 +42,6 @@ export default {
     postcss({
       plugins: [],
     }),
-
     // Watch the `public` directory and refresh the
     // browser on changes when not in production
     !production && livereload('public'),
